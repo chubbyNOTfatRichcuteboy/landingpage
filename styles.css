@@ -11,6 +11,8 @@ body {
     font-family: "Roboto";
     display:flex;
     flex-direction:column;
+    margin:0;
+    padding:0px;
 }
 
 
@@ -36,6 +38,10 @@ body {
     font-size: 24px;
 }
 
+#headerlinks a {
+    color:#E5E7EB;
+}
+
 #logo {
     border: 1px solid #00000000;
     border-radius:20px;
@@ -43,22 +49,43 @@ body {
     height:100px;
 }
 
-.midsection{
+.midsection {
     display:flex;
+    justify-content:space-between;
     padding:36px;
 }
 
+.midsection .leftside {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.midsection h1 {
+    font-weight:900;
+    font-size:48px;
+    color:#F9FAF8;
+    margin:0;
+}
+
+.midsection p {
+    font-size:18px;
+    color: #E5E7EB;
+}
+
+
+
+
+
 #mini {
-    flex:0 1 100px;
+    flex:0 1 auto;
     border: 1px solid #00000000;
     border-radius:5px;    
     max-width: 500px;
     max-height: 500px;
 }
 
-.leftside {
-    flex:2;
-}
+
 
 
 
@@ -66,16 +93,43 @@ body {
 #main {
     display:flex;
     flex-direction:column;
+
 }
 
 #main #mainheading {
     display:flex;
     justify-content:center;
+    font-size: 36px;
+    font-weight: 900;
+    color:#1F2937;
 }
 
 .lowermain {
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
+    flex: 0 1 auto;
+    gap:16px;
+    margin-bottom:80px;
+}
+
+.lowermain img {
+    width:200px;
+    border: 3px solid #3882F6;
+    border-radius:5px;
+    flex: 0 1 auto;
+}
+
+.lowermain p {
+    text-align:center;
+    max-width:200px;
+    margin:4px;
+}
+
+#one, #two, #three, #four {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 /* quote */
@@ -90,7 +144,6 @@ body {
 }
 
 .quote {
-    border:black 1px solid;
     font-size:36px;
     font-style:italic;
     color:#1F2937;
@@ -98,7 +151,6 @@ body {
 
 .qby {
     align-self:flex-end;
-    border:black 1px solid;
 }
 
 
@@ -112,8 +164,9 @@ body {
 #signbox {
     display:flex;
     gap:108px;
-    padding:10px;
+    padding:40px 84px;
     align-items:center;
+    flex: 1;
 
     background-color: #3882F6;
     border:#00000000 1px solid;
@@ -122,8 +175,19 @@ body {
 
 #signupbutton {
     flex:0 0 auto;
+    border:1px solid white;
 }
 
+.leftside h6 {
+    font-size: 24px;
+    color:#E5E7EB;
+    margin:0;
+}
+
+.leftside p {
+    color:#E5E7EB;
+    margin:0;
+}
 
 #footer {
     display:flex;
@@ -135,12 +199,13 @@ body {
 }
 
 button {
-    border:2px solid white;
+    border:solid #00000000;
     border-radius:8px;
     background-color:#3882F6;
     color:white;
     width:100px;
     height:30px;
+    font-weight:bold;
 }
 
 
